@@ -1,0 +1,32 @@
+print("**********SIMPLE CALCULATOR**********\n")
+
+numbers=input("Enter 2 numbers with space in between : ")
+values=numbers.split()
+
+num1 = int(values[0])
+num2 = int(values[1])
+
+operand = input("Enter the operand : ")
+
+if operand == '+':
+    result = num1 + num2
+    print(f"The sum of 2 numbers is : {result}")
+    
+elif operand == '-':
+    result =num1 - num2
+    print(f"The difference between 2 numbers is : {result}")
+    
+elif operand == '*':
+    result =num1 * num2
+    print(f"The product of 2 numbers is : {result}")
+    
+elif operand == '/':
+    if num2!=0:
+        result =num1 / num2
+        print(f"The result is : {result}")
+        
+    else:
+        print("Division is not possible")
+        
+else:
+    print(f"{operand} is invalid")
